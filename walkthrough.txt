@@ -59,5 +59,38 @@ In the "modified" state, the file is waiting for you to stage it, which generall
 
 As we see later, though, you aren't stuck with a change if you stage and want to make some more changes-not until you commit the change with the git commit command. Committing the file will return it to the "unmodifed" state.
 
+So let's go back to the directory file we're working on. Unfortunately Lorenzo has decide to leave the company and so Stacy needs to remove him from the employee directory. What we now have should be this:
+
+<html>
+  <head>
+    <title>Employee Directory</title>
+  </head>
+  <body>
+    <h1>Employee Directory</h1>
+    <ul>
+      <li>Martina Florentine</li>
+      <li>Nihal Mehta</li>
+    </ul>
+  </body>
+
+Stacy stages these changes with the command: git add index.html. But she takes one more look at the file and realizes that there's been a missing close html tag there all along. She adds it and has this as a file:
+
+<html>
+  <head>
+    <title>Employee Directory</title>
+  </head>
+  <body>
+    <h1>Employee Directory</h1>
+    <ul>
+      <li>Martina Florentine</li>
+      <li>Nihal Mehta</li>
+    </ul>
+  </body>
+</html>
+
+Stacy runs the command: git status. She notices that the file is both staged and unstaged, what's with that? Well, the version of the file that is staged is the version where she removed Lorenzo. The unstaged version is the one that added the closing tag--the most recent version. If Stacy were to commit the staged changes now, it would only commit the version where she removed Lorenzo. Let's stage the newest changes.
+
+Great, if we ask for the status, we'll see that index.html is staged and ready to be committed. Commit this quickly and we'll move on to the next task.
+
 
 
