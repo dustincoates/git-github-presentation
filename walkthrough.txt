@@ -1,0 +1,3 @@
+Stacy is an office manager who wants to create an office directory. She's going to use Git for version control and build the directory in simple html and css.
+
+She'll start off by creating a folder called "employee-directory" anywhere she'd like by running the command: mkdir employee-directory.
