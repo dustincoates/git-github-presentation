@@ -1,3 +1,42 @@
 Stacy is an office manager who wants to create an office directory. She's going to use Git for version control and build the directory in simple html and css.
 
-She'll start off by creating a folder called "employee-directory" anywhere she'd like by running the command: mkdir employee-directory.
+She'll start off by creating a folder called "employee-directory" anywhere she'd like by running the command: mkdir employee-directory. Next she goes into that directory with the command: cd employee-directory.
+
+Inside this directory let's create an index.html file with the command: touch index.html. We'll then open it up in our text editor of choice and make a few changes to it. We'll add the html element, the head and body elements, and just fill it out a little bit more.
+
+We should have something that looks like this:
+
+<html>
+  <head>
+    <title>Employee Directory</title>
+  </head>
+  <body>
+    <h1>Employee Directory</h1>
+    <ul>
+      <li>Martina Florentine</li>
+      <li>Lorenzo DiGiovanni</li>
+      <li>Nihal Mehta</li>
+    </ul>
+  </body>
+  
+So far we haven't done anything with Git, so let's rectify that. Inside the command line, we'll run the command: git init.
+
+The git init command creates a folder called .git. By Unix convention, any file or folder that starts with a period is hidden, but what you need to know is that we just created a Git repository.
+
+So we've come across our first Git term: repository. You may often hear it called 'repo' for short. A repository is, essentially, your files and the history associated with them.
+
+What we want to do next is run the command: git status. This should now tell us that we have untracked files. Untracked files are files that have been created in the directory that your repo references but you have not told Git to track the history of.
+
+We can tell Git to track index.html by running the command: git add index.html. This will track just the index.html file. There are some other ways to add files:
+
+>git add index.html
+Add just a single file
+>git add .
+Adds all modified or untracked files
+
+index.html is now in the state of being "staged." Staging a file tells Git that you have modified a file and you plan on keeping those modifications.
+
+Ultimately, however, nothing is actually kept until you commit the staged changes.
+
+
+
