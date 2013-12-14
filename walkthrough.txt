@@ -92,5 +92,36 @@ Stacy runs the command: git status. She notices that the file is both staged and
 
 Great, if we ask for the status, we'll see that index.html is staged and ready to be committed. Commit this quickly and we'll move on to the next task.
 
+Stacy makes one more change and adds a phone number for each person:
+
+<html>
+  <head>
+    <title>Employee Directory</title>
+  </head>
+  <body>
+    <h1>Employee Directory</h1>
+    <ul>
+      <li>Martina Florentine -- 979.479.4843 </li>
+      <li>Nihal Mehta -- 512.293.1251 </li>
+    </ul>
+  </body>
+</html>
+
+But as soon as Stacy makes this change, she gets pulled away into a three hour long meeting. When she gets back, she can't even remember what she did.
+
+Git has a command for that: git diff
+
+This command will show exactly what was changed in the modified files. There's one catch, though: this command will only work with files that haven't yet been staged. If Stacy wanted to see what had been changed in staged files, she would just need to pass a flag: git diff --staged
+
+Now, after all that work, Stacy's boss comes over and wants to know what she's been up to and what changes she's been making. Well, as you can imagine, since git is all about tracking history, there's a command for that: git log
+
+This will show you all of the commits on the current branch, including the date, author, and description. 
+
+If we want to go back to any of those commits, it's incredibly easy: just copy the SHA (the number right after "commit") and use the command: git checkout <SHA>
+
+The SHA is a hash that indexes the commit--quite long to ensure that it's always unique.
+
+If we check out that commit, you'll see we're back to where we were when Stacy made that commit. This is a great way to step back in the history of a project. I have a friend who does interactive graphical work, and he showed me how his colleagues use git to show how the creative process unfolds. Another time that the ability to check out specific commits is useful is when you are attempting to debug an issue. If something is broken you can go back in time and say: did this commit break it? No? Did this one? No? And so forth until you find the offending change.
+
 
 
