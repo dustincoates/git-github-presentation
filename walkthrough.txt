@@ -51,7 +51,7 @@ You don't want to just make a commit message, however, you want to make a good c
 A summary: this should be shorter than 50 characters. In fact, you'll notice that inside the editor, the color of the message changes if we go beyond 50 characters.
 Explanation: this is optional, but gives you the opportunity to explain why you did something. The editor will wrap your explanation by default. Some people say that you should always use a "command" type phrasing: e.g. "Create a new file" instead of "Creates a new file" or "Created a new file" for your message.
 
-This is a small one so we'll just write "Create initial file" as our summary. Hit "esq" and then type "w" and "q" and hit "enter" and our file has been commite. The file is now back to the "unmodified" state.
+This is a small one so we'll just write "Create initial file" as our summary. Hit "esq" and then type ":" and "w" and "q" and hit "enter" and our file has been commite. The file is now back to the "unmodified" state.
 
 The states might seem confusing at first, but it's actually pretty straight-forward. Let's take a look at a graph of the states. [In presentation]
 
