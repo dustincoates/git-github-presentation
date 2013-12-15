@@ -135,8 +135,9 @@ There are other flags, but the final one I'll tell you about is grep. The grep f
 
 But let's back up for a second. I mentioned earlier that git log showed commits on the current branch. What's a branch?
 
+A branch is, essentially, a new path for your repository to go. Each branch is a pointer to a specific commit, with HEAD being the pointer for the current commit.
 
-
+Branches are incredibly useful when working with other people. So let's imagine Stacy's co-worker Greg wants to add to the directory but he doesn't want to affect Stacy's work until after he's done with his contributions. A branch is ideal for this.
 
 
 
