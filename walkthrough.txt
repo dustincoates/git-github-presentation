@@ -38,6 +38,10 @@ index.html is now in the state of being "staged." Staging a file tells Git that 
 
 Ultimately, however, nothing is actually kept until you commit the staged changes. To commit files, run the command: git commit.
 
+The first time you do this, it will ask you for your name and email:
+git config --global user.email "you@example.com"                                                                                             
+git config --global user.name "Your Name" 
+
 This will open up your default editor. Generally this will be vi. So we hit 'i' to start typing we can write out a message detailing what we've changed. This is your way to tell people who might come across code later what the point of your changes were and provide a small summary of what you did.
 
 You'll notice that there is some stuff already here. But it's preceded by a hash, so it won't end up in your commit message--anything that starts with a hash is treated as a comment and isn't include in the commit message.
