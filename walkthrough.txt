@@ -121,7 +121,23 @@ If we want to go back to any of those commits, it's incredibly easy: just copy t
 
 The SHA is a hash that indexes the commit--quite long to ensure that it's always unique.
 
-If we check out that commit, you'll see we're back to where we were when Stacy made that commit. This is a great way to step back in the history of a project. I have a friend who does interactive graphical work, and he showed me how his colleagues use git to show how the creative process unfolds. Another time that the ability to check out specific commits is useful is when you are attempting to debug an issue. If something is broken you can go back in time and say: did this commit break it? No? Did this one? No? And so forth until you find the offending change.
+If we check out that commit, you'll see we're back to where we were when Stacy made that commit. This is a great way to step back in the history of a project. You can use 'j' or 'k' to move up and down, or just use the arrow keys. Type 'q' to get out of there.
+
+I have a friend who does interactive graphical work, and he showed me how his colleagues use git to show how the creative process unfolds. Another time that the ability to check out specific commits is useful is when you are attempting to debug an issue. If something is broken you can go back in time and say: did this commit break it? No? Did this one? No? And so forth until you find the offending change.
+
+There are a surprising amount of options you can pass through for git log. If you want a little information, you can include the stat flag, which will include statistics about each commit: git log --stat. If you want less information (just the highlights, if you will), use: git log --oneline. And to have it graphed, use: git log --graph. That last one will be really useful once you start working with other people.
+
+If you don't want to do date calculations in your head about how long ago something was, use: git log --relative-date. 
+
+You can also use -n (where n is a number) to limit the number of commits you get back. Of course, you can combine these commands, so you could say: git log -2 --oneline
+
+There are other flags, but the final one I'll tell you about is grep. The grep flag allows you search commit messages and return all commits that include the search term. Just use: git log --grep=<term>
+
+But let's back up for a second. I mentioned earlier that git log showed commits on the current branch. What's a branch?
+
+
+
+
 
 
 
