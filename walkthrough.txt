@@ -15,7 +15,7 @@ We should have something that looks like this:
     <ul>
       <li>Martina Florentine</li>
       <li>Lorenzo DiGiovanni</li>
-      <li>Nihal Mehta</li>
+      <li>Ajna Mehta</li>
     </ul>
   </body>
   
@@ -73,7 +73,7 @@ So let's go back to the directory file we're working on. Unfortunately Lorenzo h
     <h1>Employee Directory</h1>
     <ul>
       <li>Martina Florentine</li>
-      <li>Nihal Mehta</li>
+      <li>Ajna Mehta</li>
     </ul>
   </body>
 
@@ -87,7 +87,7 @@ Stacy stages these changes with the command: git add index.html. But she takes o
     <h1>Employee Directory</h1>
     <ul>
       <li>Martina Florentine</li>
-      <li>Nihal Mehta</li>
+      <li>Ajna Mehta</li>
     </ul>
   </body>
 </html>
@@ -106,7 +106,7 @@ Stacy makes one more change and adds a phone number for each person:
     <h1>Employee Directory</h1>
     <ul>
       <li>Martina Florentine -- 979.479.4843 </li>
-      <li>Nihal Mehta -- 512.293.1251 </li>
+      <li>Ajna Mehta -- 512.293.1251 </li>
     </ul>
   </body>
 </html>
@@ -141,7 +141,13 @@ But let's back up for a second. I mentioned earlier that git log showed commits 
 
 A branch is, essentially, a new path for your repository to go. Each branch is a pointer to a specific commit, with HEAD being the pointer for the current commit.
 
-Branches are incredibly useful when working with other people. So let's imagine Stacy's co-worker Greg wants to add to the directory but he doesn't want to affect Stacy's work until after he's done with his contributions. A branch is ideal for this.
+Branches are incredibly useful when working with other people. So let's imagine Stacy wants to add to the directory but she doesn't want to affect the work that her colleagues are doing until after she's done with her contributions. A branch is ideal for this.
+
+To create a new branch, Stacy uses the command: git branch <branch-name>
+
+And since she'll be adding email addresses, she calls the branch email-addresses. To see all the branches that currently exists, she'll (and you'll) use the command: git branch. To switch to a branch, use the command: git checkout <branch-name>.
+
+Now she makes some changes, maybe adding the email addresses, as the branch name would imply, until she has the following:
 
 
 
