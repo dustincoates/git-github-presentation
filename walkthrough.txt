@@ -149,6 +149,34 @@ And since she'll be adding email addresses, she calls the branch email-addresses
 
 Now she makes some changes, maybe adding the email addresses, as the branch name would imply, until she has the following:
 
+<html>
+  <head>
+    <title>Employee Directory</title>
+  </head>
+  <body>
+    <h1>Employee Directory</h1>
+    <ul>
+      <li>Martina Florentine -- 979.479.4843 -- mflorentine@company.co</li>
+      <li>Ajna Mehta -- 512.293.1251 -- amehta@company.co</li>
+    </ul>
+  </body>
+</html>
+
+She stages and then commits the changes and decides she's done.
+
+Generally, when you're working with Git, everything branches off the master branch so that the master branch is, well, the "master" branch. Stacy, being done, decides to merge her branch into the master branch.
+
+To do this she goes back to the master branch by using the command: git checkout master.
+
+She then merges her branch into master by using the git merge command: git merge <branch-name>.
+
+Git will check the two branches to see if they are mergeable. You can easily imagine a scenario where multiple people are working on a single repository and they change the same thing on multiple branches. Git is usually pretty good about guessing what you want to keep, but if you change the same thing on multiple branches, it leaves the decision of what to keep up to you. Git will tell you that you have "merge conflicts" and require you to fix them before you continue.
+
+Stacy is working alone so far in this example so she won't have any merge conflicts, but let's fake one real quick.
+
+
+
+
 
 
 
