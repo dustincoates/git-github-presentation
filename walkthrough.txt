@@ -172,9 +172,9 @@ She then merges her branch into master by using the git merge command: git merge
 
 Git will check the two branches to see if they are mergeable. You can easily imagine a scenario where multiple people are working on a single repository and they change the same thing on multiple branches. Git is usually pretty good about guessing what you want to keep, but if you change the same thing on multiple branches, it leaves the decision of what to keep up to you. Git will tell you that you have "merge conflicts" and require you to fix them before you continue.
 
-Stacy is working alone so far in this example so she won't have any merge conflicts, but let's fake one real quick.
+Stacy is working alone so far in this example so she won't have any merge conflicts, but let's fake one really quick.
 
-
+So what we're doing is we're making a change on our branch--just a small change.
 
 
 
