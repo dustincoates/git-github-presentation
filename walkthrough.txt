@@ -176,6 +176,11 @@ Stacy is working alone so far in this example so she won't have any merge confli
 
 So what we're doing is we're making a change on our branch--just a really small change.
 
+And you'll notice that Git displays these: "<<<<<" and "====" and ">>>>>" to show you where the merge conflicts are. The top (HEAD) refers to what you're merging into--as HEAD always refers to our current branch. The bottom refers to what you're merging in. Choose what you want and delete the rest, stage, and commit.
+
+All we've done so far is use Git and, as you'll see, Git by itself is very powerful. But it's once you pair it with a Git server that it gets even more powerful. And that's where Github comes in. So let's talk a little bit about Github.
+
+
 
 
 
